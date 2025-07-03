@@ -1,17 +1,20 @@
-# **Magic Portfolio by Once UI**
+# **Michael Plymire's Portfolio**
 
-View the [demo here](https://demo.magic-portfolio.com).
+A modern, responsive portfolio website built with Next.js and Once UI, showcasing my software engineering projects and experience.
 
-![Magic Portfolio](https://demo.magic-portfolio.com/images/og/home.jpg)
+![Michael Plymire Portfolio](https://demo.magic-portfolio.com/images/og/home.jpg)
 
+## **About**
+
+This portfolio website was customized from the Magic Portfolio template to showcase my work as a software engineer. It features my projects, blog posts, and professional experience.
 
 # **Getting started**
 
-Magic Portfolio was built with [Once UI](https://once-ui.com) for [Next.js](https://nextjs.org). It requires Node.js v18.17+.
+This portfolio was built with [Once UI](https://once-ui.com) for [Next.js](https://nextjs.org). It requires Node.js v18.17+.
 
 **1. Clone the repository**
 ```
-git clone https://github.com/once-ui-system/magic-portfolio.git
+git clone https://github.com/mikeknows/magic-portfolio.git
 ```
 
 **2. Install dependencies**
@@ -26,18 +29,26 @@ npm run dev
 
 **4. Edit config**
 ```
-src/app/resources/config
+src/resources/config
 ```
 
 **5. Edit content**
 ```
-src/app/resources/content
+src/resources/content
 ```
 
 **6. Create blog posts / projects**
 ```
 Add a new .mdx file to src/app/blog/posts or src/app/work/projects
 ```
+
+## **Contact**
+
+Feel free to reach out if you'd like to collaborate or discuss software engineering!
+
+- Email: michael.plymire@gmail.com
+- LinkedIn: [linkedin.com/in/michaelplymire](https://linkedin.com/in/michaelplymire)
+- GitHub: [github.com/mikeknows](https://github.com/mikeknows)
 
 # **Documentation**
 
