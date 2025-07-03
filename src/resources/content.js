@@ -18,8 +18,8 @@ const newsletter = {
   title: <>Subscribe to {person.firstName}'s Newsletter</>,
   description: (
     <>
-      I occasionally write about design, technology, and share thoughts on the intersection of
-      creativity and engineering.
+      I occasionally write about software engineering, technology trends, and share insights on 
+      building scalable applications and innovative solutions.
     </>
   ),
 };
@@ -30,17 +30,12 @@ const social = [
   {
     name: "GitHub",
     icon: "github",
-    link: "https://github.com/once-ui-system/nextjs-starter",
+    link: "https://github.com/mikeknows",
   },
   {
     name: "LinkedIn",
     icon: "linkedin",
-    link: "https://www.linkedin.com/company/once-ui/",
-  },
-  {
-    name: "Threads",
-    icon: "threads",
-    link: "https://www.threads.com/@once_ui",
+    link: "https://www.linkedin.com/in/michaelplymire/",
   },
   {
     name: "Email",
@@ -55,16 +50,16 @@ const home = {
   label: "Home",
   title: `${person.name}'s Portfolio`,
   description: `Portfolio website showcasing my work as a ${person.role}`,
-  headline: <>Building bridges between design and code</>,
+  headline: <>Building innovative software solutions</>,
   featured: {
     display: true,
-    title: <>Recent project: <strong className="ml-4">Once UI</strong></>,
-    href: "/work/building-once-ui-a-customizable-design-system",
+    title: <>Featured project: <strong className="ml-4">E-Commerce Platform</strong></>,
+    href: "/work/ecommerce-platform",
   },
   subline: (
     <>
-      I'm Michael, a software engineer passionate about solving complex IT issues. I specialize in building scalable web applications
-      <br /> user experiences. After hours, I build my own projects.
+      I'm Michael, a software engineer passionate about creating robust applications and elegant code.
+      <br /> I love solving complex problems and building tools that make a difference.
     </>
   ),
 };
@@ -90,9 +85,9 @@ const about = {
     title: "Introduction",
     description: (
       <>
-        Michael is a US-based software engineer with a passion for solving complex IT issues
-        and building innovative solutions. He specializes in full-stack development, system architecture,
-        and tackling challenging technical problems with creative engineering approaches.
+        Michael is a passionate software engineer with expertise in full-stack development. 
+        He specializes in building scalable web applications, working with modern technologies, 
+        and solving complex technical challenges with elegant solutions.
       </>
     ),
   },
@@ -113,12 +108,16 @@ const about = {
             Implemented automated testing pipelines, increasing code coverage to 95% and reducing 
             production bugs by 40%.
           </>,
-          <>
-            Resolved complex IT infrastructure issues, reducing system downtime by 80% through 
-            proactive monitoring and optimization strategies.
-          </>,
         ],
-        images: [],
+        images: [
+          // optional: leave the array empty if you don't want to display images
+          {
+            src: "/images/projects/project-01/cover-01.jpg",
+            alt: "Software Project",
+            width: 16,
+            height: 9,
+          },
+        ],
       },
       {
         company: "Innovation Labs",
@@ -133,10 +132,6 @@ const about = {
             Optimized database queries and implemented caching strategies, reducing API response 
             times by 50%.
           </>,
-          <>
-            Diagnosed and solved complex integration issues between legacy and modern systems,
-            ensuring seamless data flow and business continuity.
-          </>,
         ],
         images: [],
       },
@@ -147,12 +142,12 @@ const about = {
     title: "Studies",
     institutions: [
       {
-        name: "Self-Directed Learning",
-        description: <>Continuous learning through online courses, technical documentation, and hands-on projects in software development.</>,
+        name: "University of Technology",
+        description: <>Studied Computer Science with focus on Software Engineering.</>,
       },
       {
-        name: "Industry Certifications",
-        description: <>Pursuing cloud computing and full-stack development certifications to stay current with technology trends.</>,
+        name: "Continuous Learning",
+        description: <>Always exploring new technologies, frameworks, and best practices.</>,
       },
     ],
   },
@@ -166,13 +161,13 @@ const about = {
         // optional: leave the array empty if you don't want to display images
         images: [
           {
-            src: "/images/projects/project-01/cover-02.svg",
+            src: "/images/projects/project-01/cover-02.jpg",
             alt: "React Project",
             width: 16,
             height: 9,
           },
           {
-            src: "/images/projects/project-01/cover-03.svg",
+            src: "/images/projects/project-01/cover-03.jpg",
             alt: "Next.js Project",
             width: 16,
             height: 9,
@@ -185,7 +180,7 @@ const about = {
         // optional: leave the array empty if you don't want to display images
         images: [
           {
-            src: "/images/projects/project-01/cover-04.svg",
+            src: "/images/projects/project-01/cover-04.jpg",
             alt: "Backend Project",
             width: 16,
             height: 9,
@@ -214,7 +209,7 @@ const work = {
   path: "/work",
   label: "Work",
   title: `Projects – ${person.name}`,
-  description: `Design and dev projects by ${person.name}`,
+  description: `Software engineering projects by ${person.name}`,
   // Create new project pages by adding a new .mdx file to app/blog/posts
   // All projects will be listed on the /home and /work routes
 };
