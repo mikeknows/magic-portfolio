@@ -1,16 +1,16 @@
 import { Logo } from "@once-ui-system/core";
 
 const person = {
-  firstName: "Selene",
-  lastName: "Yu",
+  firstName: "Michael",
+  lastName: "Plymire",
   get name() {
     return `${this.firstName} ${this.lastName}`;
   },
-  role: "Design Engineer",
-  avatar: "/images/avatar.jpg",
-  email: "example@gmail.com",
-  location: "Asia/Jakarta", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
-  languages: ["English", "Bahasa"], // optional: Leave the array empty if you don't want to display languages
+  role: "Software Engineer",
+  avatar: "/images/avatar.svg",
+  email: "michael.plymire@gmail.com",
+  location: "America/New_York", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
+  languages: ["English"], // optional: Leave the array empty if you don't want to display languages
 };
 
 const newsletter = {
@@ -63,7 +63,7 @@ const home = {
   },
   subline: (
     <>
-      I'm Selene, a design engineer at <Logo icon="/trademarks/wordmark-dark.svg" style={{ display: "inline-flex", top: "0.25em", marginLeft: "-0.25em" }}/>, where I craft intuitive
+      I'm Michael, a software engineer passionate about solving complex IT issues. I specialize in building scalable web applications
       <br /> user experiences. After hours, I build my own projects.
     </>
   ),
@@ -90,9 +90,9 @@ const about = {
     title: "Introduction",
     description: (
       <>
-        Selene is a Jakarta-based design engineer with a passion for transforming complex challenges
-        into simple, elegant design solutions. Her work spans digital interfaces, interactive
-        experiences, and the convergence of design and technology.
+        Michael is a US-based software engineer with a passion for solving complex IT issues
+        and building innovative solutions. He specializes in full-stack development, system architecture,
+        and tackling challenging technical problems with creative engineering approaches.
       </>
     ),
   },
@@ -101,41 +101,41 @@ const about = {
     title: "Work Experience",
     experiences: [
       {
-        company: "FLY",
-        timeframe: "2022 - Present",
-        role: "Senior Design Engineer",
+        company: "Tech Solutions Inc.",
+        timeframe: "2023 - Present",
+        role: "Senior Software Engineer",
         achievements: [
           <>
-            Redesigned the UI/UX for the FLY platform, resulting in a 20% increase in user
-            engagement and 30% faster load times.
+            Led the development of a microservices architecture, improving system scalability by 300% 
+            and reducing deployment time by 60%.
           </>,
           <>
-            Spearheaded the integration of AI tools into design workflows, enabling designers to
-            iterate 50% faster.
+            Implemented automated testing pipelines, increasing code coverage to 95% and reducing 
+            production bugs by 40%.
+          </>,
+          <>
+            Resolved complex IT infrastructure issues, reducing system downtime by 80% through 
+            proactive monitoring and optimization strategies.
           </>,
         ],
-        images: [
-          // optional: leave the array empty if you don't want to display images
-          {
-            src: "/images/projects/project-01/cover-01.jpg",
-            alt: "Once UI Project",
-            width: 16,
-            height: 9,
-          },
-        ],
+        images: [],
       },
       {
-        company: "Creativ3",
-        timeframe: "2018 - 2022",
-        role: "Lead Designer",
+        company: "Innovation Labs",
+        timeframe: "2021 - 2023",
+        role: "Full Stack Developer",
         achievements: [
           <>
-            Developed a design system that unified the brand across multiple platforms, improving
-            design consistency by 40%.
+            Built and deployed multiple web applications using React, Node.js, and PostgreSQL,
+            serving over 10,000 active users.
           </>,
           <>
-            Led a cross-functional team to launch a new product line, contributing to a 15% increase
-            in overall company revenue.
+            Optimized database queries and implemented caching strategies, reducing API response 
+            times by 50%.
+          </>,
+          <>
+            Diagnosed and solved complex integration issues between legacy and modern systems,
+            ensuring seamless data flow and business continuity.
           </>,
         ],
         images: [],
@@ -147,12 +147,12 @@ const about = {
     title: "Studies",
     institutions: [
       {
-        name: "University of Jakarta",
-        description: <>Studied software engineering.</>,
+        name: "Self-Directed Learning",
+        description: <>Continuous learning through online courses, technical documentation, and hands-on projects in software development.</>,
       },
       {
-        name: "Build the Future",
-        description: <>Studied online marketing and personal branding.</>,
+        name: "Industry Certifications",
+        description: <>Pursuing cloud computing and full-stack development certifications to stay current with technology trends.</>,
       },
     ],
   },
@@ -161,36 +161,41 @@ const about = {
     title: "Technical skills",
     skills: [
       {
-        title: "Figma",
-        description: <>Able to prototype in Figma with Once UI with unnatural speed.</>,
+        title: "React & Next.js",
+        description: <>Building modern web applications with React ecosystem and Next.js for optimal performance.</>,
         // optional: leave the array empty if you don't want to display images
         images: [
           {
-            src: "/images/projects/project-01/cover-02.jpg",
-            alt: "Project image",
+            src: "/images/projects/project-01/cover-02.svg",
+            alt: "React Project",
             width: 16,
             height: 9,
           },
           {
-            src: "/images/projects/project-01/cover-03.jpg",
-            alt: "Project image",
+            src: "/images/projects/project-01/cover-03.svg",
+            alt: "Next.js Project",
             width: 16,
             height: 9,
           },
         ],
       },
       {
-        title: "Next.js",
-        description: <>Building next gen apps with Next.js + Once UI + Supabase.</>,
+        title: "Node.js & Python",
+        description: <>Backend development with Node.js and Python, building robust APIs and microservices.</>,
         // optional: leave the array empty if you don't want to display images
         images: [
           {
-            src: "/images/projects/project-01/cover-04.jpg",
-            alt: "Project image",
+            src: "/images/projects/project-01/cover-04.svg",
+            alt: "Backend Project",
             width: 16,
             height: 9,
           },
         ],
+      },
+      {
+        title: "Database & Cloud",
+        description: <>Experience with PostgreSQL, MongoDB, and cloud platforms like AWS and Azure.</>,
+        images: [],
       },
     ],
   },
@@ -199,7 +204,7 @@ const about = {
 const blog = {
   path: "/blog",
   label: "Blog",
-  title: "Writing about design and tech...",
+  title: "Writing about software engineering and tech...",
   description: `Read what ${person.name} has been up to recently`,
   // Create new blog posts by adding a new .mdx file to app/blog/posts
   // All posts will be listed on the /blog route

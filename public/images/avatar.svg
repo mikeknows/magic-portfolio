@@ -1,0 +1,28 @@
+<svg width="400" height="400" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a202c;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#2d3748;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="400" height="400" fill="url(#bg)"/>
+  
+  <!-- Code brackets -->
+  <text x="80" y="150" font-family="Monaco, monospace" font-size="120" fill="#4fd1c7" font-weight="bold">&lt;</text>
+  <text x="290" y="150" font-family="Monaco, monospace" font-size="120" fill="#4fd1c7" font-weight="bold">/&gt;</text>
+  
+  <!-- Developer text -->
+  <text x="200" y="240" font-family="Arial, sans-serif" font-size="24" fill="#e2e8f0" text-anchor="middle" font-weight="bold">DEVELOPER</text>
+  
+  <!-- Code lines -->
+  <rect x="60" y="280" width="280" height="4" fill="#48bb78" opacity="0.8"/>
+  <rect x="60" y="300" width="200" height="4" fill="#ed8936" opacity="0.8"/>
+  <rect x="60" y="320" width="240" height="4" fill="#4299e1" opacity="0.8"/>
+  
+  <!-- Cursor -->
+  <rect x="305" y="316" width="3" height="12" fill="#f6e05e">
+    <animate attributeName="opacity" values="1;0;1" dur="1s" repeatCount="indefinite"/>
+  </rect>
+</svg>
